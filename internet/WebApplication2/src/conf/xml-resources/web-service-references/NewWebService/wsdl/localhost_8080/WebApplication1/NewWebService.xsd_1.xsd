@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://internet/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://internet/">
+
+<xs:element name="activeAcc" type="tns:activeAcc"/>
+
+<xs:element name="activeAccResponse" type="tns:activeAccResponse"/>
+
+<xs:element name="bankAccount" type="tns:bankAccount"/>
+
+<xs:element name="bankAccountResponse" type="tns:bankAccountResponse"/>
+
+<xs:element name="checkreload" type="tns:checkreload"/>
+
+<xs:element name="checkreloadResponse" type="tns:checkreloadResponse"/>
+
+<xs:element name="fam" type="tns:fam"/>
+
+<xs:element name="famResponse" type="tns:famResponse"/>
+
+<xs:element name="getWaiting" type="tns:getWaiting"/>
+
+<xs:element name="getWaitingResponse" type="tns:getWaitingResponse"/>
+
+<xs:element name="insertC" type="tns:insertC"/>
+
+<xs:element name="insertCResponse" type="tns:insertCResponse"/>
+
+<xs:element name="insertNum" type="tns:insertNum"/>
+
+<xs:element name="insertNumResponse" type="tns:insertNumResponse"/>
+
+<xs:element name="insertS" type="tns:insertS"/>
+
+<xs:element name="insertSResponse" type="tns:insertSResponse"/>
+
+<xs:element name="loginC" type="tns:loginC"/>
+
+<xs:element name="loginCResponse" type="tns:loginCResponse"/>
+
+<xs:element name="logoutC" type="tns:logoutC"/>
+
+<xs:element name="logoutCResponse" type="tns:logoutCResponse"/>
+
+<xs:element name="reload" type="tns:reload"/>
+
+<xs:element name="reloadResponse" type="tns:reloadResponse"/>
+
+<xs:element name="remain" type="tns:remain"/>
+
+<xs:element name="remainResponse" type="tns:remainResponse"/>
+
+<xs:element name="waitingApp" type="tns:waitingApp"/>
+
+<xs:element name="waitingAppResponse" type="tns:waitingAppResponse"/>
+
+<xs:complexType name="loginC">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginCResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="remain">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="remainResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getWaiting">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getWaitingResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertS">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="surname" type="xs:string" minOccurs="0"/>
+<xs:element name="address" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertSResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertC">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="surname" type="xs:string" minOccurs="0"/>
+<xs:element name="birthyear" type="xs:string" minOccurs="0"/>
+<xs:element name="gender" type="xs:string" minOccurs="0"/>
+<xs:element name="homeAddr" type="xs:string" minOccurs="0"/>
+<xs:element name="workAddr" type="xs:string" minOccurs="0"/>
+<xs:element name="familyState" type="xs:string" minOccurs="0"/>
+<xs:element name="afm" type="xs:string" minOccurs="0"/>
+<xs:element name="bankAccount" type="xs:string" minOccurs="0"/>
+<xs:element name="family" type="xs:string" minOccurs="0"/>
+<xs:element name="beneficiary1" type="xs:string" minOccurs="0"/>
+<xs:element name="beneficiary2" type="xs:string" minOccurs="0"/>
+<xs:element name="customerCode" type="xs:string" minOccurs="0"/>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertCResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="fam">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="famResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkreload">
+<xs:sequence>
+<xs:element name="accPhoneNum" type="xs:string" minOccurs="0"/>
+<xs:element name="sum" type="xs:string" minOccurs="0"/>
+<xs:element name="curRem" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkreloadResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="activeAcc">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="activeAccResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="reload">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="reloadResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertNum">
+<xs:sequence>
+<xs:element name="bankAcc" type="xs:string" minOccurs="0"/>
+<xs:element name="activeAcc" type="xs:string" minOccurs="0"/>
+<xs:element name="accPhoneNum" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertNumResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="logoutC">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="logoutCResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="bankAccount">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="bankAccountResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="waitingApp">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="waitingAppResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,11 @@
+<img src="Άτιτλο" width="944" height="608" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:NIKOS -->
+<area shape="rect" coords="21,137,571,261" href="management.jsp" />
+<area shape="rect" coords="17,330,572,455" href="reload.jsp" />
+</map>
